@@ -1,0 +1,635 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+}
+
+#header {
+    background: #2435A1;
+    padding: 15px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.navbar select {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+}
+
+.navbar a {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+#hero {
+    background: url("../img/bg.png") no-repeat bottom/cover;
+    min-height: 90vh;
+    margin-bottom: 90px;
+}
+
+.hero-title h1 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    padding-bottom: 67px;
+}
+
+.hero-title p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    padding-bottom: 51px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.hero-group {
+    display: flex;
+    align-items: center;
+}
+
+.hero-group h2 {
+    margin-left: -40px;
+    margin-right: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.hero-group-icon {
+    font-size: 30px;
+    color: #FC724D;
+}
+
+#section {
+    padding-bottom: 90px;
+}
+
+.section {
+    width: 983px;
+    height: 0;
+    left: 228px;
+    top: 831px;
+    color: #1100D9;
+    border: 5px solid #1100D9;
+    display: flex;
+    justify-content: center;
+}
+
+.picture {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    padding-bottom: 13px;
+}
+
+.number {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+.student {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.phone {
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.2px;
+    color: #1100D9;
+}
+
+.group-sun {
+    display: flex;
+    flex-direction: column;
+}
+
+.group-photo {
+    display: flex;
+    align-items: center;
+}
+
+.student-2 {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.phone-2 {
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.2px;
+    color: #1100D9;
+}
+
+.group-sun-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.group-photo-2 {
+    display: flex;
+    align-items: center;
+}
+
+.student-3 {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.about {
+    padding-bottom: 130px;
+}
+
+.phone-3 {
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.2px;
+    color: #1100D9;
+}
+
+.group-sun-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.group-photo-3 {
+    display: flex;
+    align-items: center;
+}
+
+.school {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.about-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-btn button {
+    padding: 10px 30px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    color: blue;
+    background: transparent;
+    font-size: 23px;
+    transition: -1s;
+    cursor: pointer;
+}
+
+.about-btn button:hover {
+    background: blue;
+    color: white;
+    transform: scale(1.1);
+}
+
+.about-modal-bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.66);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-modal-bg-square {
+    width: 1171px;
+    height: 603px;
+    overflow-y: scroll;
+    background: #ffffff;
+    border: 2px solid #2435A1;
+    border-radius: 38px;
+    position: relative;
+    animation: ani .4s alternate linear;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    25% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    75% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    90% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.about-modal-bg-square p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163.4%;
+    letter-spacing: 0.2px;
+    color: #000000;
+    padding: 10px 40px;
+}
+
+.about-modal-bg-square div {
+    font-size: 25px;
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transition: -4s;
+    cursor: pointer;
+}
+
+.about-modal-bg-square div:hover {
+    transform: scale(1.3);
+}
+
+.about-modal {
+    display: none;
+}
+
+.teach {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    padding-bottom: 52px;
+}
+
+
+.math h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.math p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.biology h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.biology p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.kyrgyzstan h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.kyrgyzstan p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.physic h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.physic p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.football h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.football p {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.teachers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+#teachers {
+    padding-bottom: 82px;
+}
+
+.school-text h1 {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    padding-bottom: 35px;
+}
+
+.school-text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.school-gallery {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    padding-bottom: 55px;
+}
+
+.boy {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery {
+    padding: 30px;
+    display: flex;
+
+}
+
+.height img {
+    height: 276px;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 450px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-slide h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    padding-bottom: 15px;
+}
+
+.school-text {
+    margin-left: 5%;
+
+}
+
+.sms-group {
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    padding: 30px;
+
+
+}
+
+.inst-group {
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    padding: 30px;
+
+
+}
+
+.face-group {
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    padding: 30px;
+
+
+}
+
+.phone-group {
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    padding: 30px;
+
+
+}
+
+.map-group {
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    padding: 30px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#footer {
+    background: url("../img/bg footer.png") no-repeat bottom/cover;
+    min-height: 35vh;
+}
+.footer{
+    padding-bottom: 60px;
+    border-bottom: 1px solid #FFFFFF;
+}
+.web-group {
+    padding-top: 60px;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: right;
+    letter-spacing: 0.1px;
+
+    color: #FFFFFF;
+
+}
+.motion{
+text-align: center;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.moion__title{
+    margin-right: 10px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+.maps{
+    margin-left : 590px;
+    margin-top: -450px;
+}
+.moion__title{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin-top: 30px;
+
+}
+.motion p{
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+.email-com{
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+
+}
+.whatsapp{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.iphone{
+    margin-left: 100px;
+    margin-top: -100px;
+}
